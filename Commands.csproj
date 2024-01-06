@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>ABB.Commands</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Paula GORGE</Authors>
+    <Company>ABB</Company>
+    <Description>This package is basically gives the user the ability to create commands.</Description>
+    <PackageTags>ConsoleCommands;NewConsoleCommands</PackageTags>
+  </PropertyGroup>
+
+</Project>
