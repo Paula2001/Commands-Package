@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>ABB.Commands</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Paula GORGE</Authors>
+    <Company>ABB</Company>
+    <Description>This package is basically gives the user the ability to create commands.</Description>
+    <PackageTags>ConsoleCommands;NewConsoleCommands</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Identity.Web" Version="2.16.0" />
+		<PackageReference Include="Microsoft.Identity.Web.UI" Version="2.16.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
