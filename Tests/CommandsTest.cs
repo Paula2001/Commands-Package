@@ -15,18 +15,17 @@ public class UnitTest1
     [Fact]
     public async void TestShouldRunCommand()
     {
-
         var sw = new StringWriter();
         Console.SetOut(sw);
 
         string[] args = {"custom-command", "test"};
-        _serviceProvider.AddScoped<ACommand, TestCommands>();
-        var asd = WebApplication.CreateBuilder(args);
-        var asdasd = asd.Build();
-        await _serviceProvider.AddCommands(args , asdasd);
+        _serviceProvider.AddScoped<ACommand, TestCommand>();
+        var builder = WebApplication.CreateBuilder(args);
+        var build = builder.Build();
+        await _serviceProvider.AddCommands(args , build);
         try
         {
-            asdasd.Run();
+            build.Run();
         }
         catch (OperationCanceledException)
         {
@@ -43,7 +42,7 @@ public class UnitTest1
         Console.SetOut(sw);
 
         string[] args = {"custom-command", "test2"};
-        _serviceProvider.AddScoped<ACommand, TestCommands>();
+        _serviceProvider.AddScoped<ACommand, TestCommand>();
         var asd = WebApplication.CreateBuilder(args);
         var asdasd = asd.Build();
         await _serviceProvider.AddCommands(args , asdasd);

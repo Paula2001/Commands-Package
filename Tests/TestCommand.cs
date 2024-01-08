@@ -2,7 +2,7 @@ using Commands;
 
 namespace Tests;
 
-class TestCommands : ACommand
+class TestCommand : ACommand
 {
     public override string Name()
     {
