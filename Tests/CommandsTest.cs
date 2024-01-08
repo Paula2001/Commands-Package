@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 
 namespace Tests;
 
-public class UnitTest1
+public class CommandsTest
 {
     private IServiceCollection _serviceProvider;
     public UnitTest1()
