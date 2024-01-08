@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using Commands;
+using ABB.Commands;
 using Microsoft.AspNetCore.Builder;
 
 namespace Tests;
@@ -7,7 +7,7 @@ namespace Tests;
 public class CommandsTest
 {
     private IServiceCollection _serviceProvider;
-    public UnitTest1()
+    public CommandsTest()
     {
         _serviceProvider = new ServiceCollection();
         _serviceProvider.BuildServiceProvider();

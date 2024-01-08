@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Commands;
+namespace ABB.Commands;
 public class CommandRunner
 {
     private readonly IServiceProvider _serviceProvider;

@@ -1,4 +1,4 @@
-﻿namespace Commands;
+﻿namespace ABB.Commands;
 
 public abstract class ACommand
 {
