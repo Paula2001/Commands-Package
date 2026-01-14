@@ -1,4 +1,4 @@
-﻿namespace ABB.Commands;
+﻿namespace Paula.Commands;
 
 public abstract class ACommand
 {

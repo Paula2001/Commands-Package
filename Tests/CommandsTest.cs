@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using ABB.Commands;
+using Paula.Commands;
 using Microsoft.AspNetCore.Builder;
 
 namespace Tests;
@@ -18,11 +18,11 @@ public class CommandsTest
         var sw = new StringWriter();
         Console.SetOut(sw);
 
-        string[] args = {"custom-command", "test"};
+        string[] args = { "custom-command", "test" };
         _serviceProvider.AddScoped<ACommand, TestCommand>();
         var builder = WebApplication.CreateBuilder(args);
         var build = builder.Build();
-        await _serviceProvider.AddCommands(args , build);
+        await _serviceProvider.AddCommands(args, build);
         try
         {
             build.Run();
@@ -30,8 +30,8 @@ public class CommandsTest
         catch (OperationCanceledException)
         {
         }
-        Assert.Contains("this is command ran",sw.ToString());
-        Assert.Contains("Application is shutting down",sw.ToString());
+        Assert.Contains("this is command ran", sw.ToString());
+        Assert.Contains("Application is shutting down", sw.ToString());
     }
 
     [Fact]
@@ -41,11 +41,11 @@ public class CommandsTest
         var sw = new StringWriter();
         Console.SetOut(sw);
 
-        string[] args = {"custom-command", "test2"};
+        string[] args = { "custom-command", "test2" };
         _serviceProvider.AddScoped<ACommand, TestCommand>();
         var asd = WebApplication.CreateBuilder(args);
         var asdasd = asd.Build();
-        await _serviceProvider.AddCommands(args , asdasd);
+        await _serviceProvider.AddCommands(args, asdasd);
         try
         {
             asdasd.Run();
@@ -53,7 +53,7 @@ public class CommandsTest
         catch (OperationCanceledException x)
         {
         }
-        Assert.Contains("The command test2 is not found",sw.ToString());
-        Assert.Contains("Application is shutting down",sw.ToString());
+        Assert.Contains("The command test2 is not found", sw.ToString());
+        Assert.Contains("Application is shutting down", sw.ToString());
     }
 }

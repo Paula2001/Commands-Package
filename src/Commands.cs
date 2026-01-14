@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ABB.Commands;
+namespace Paula.Commands;
 
 public static class Commands
 {
-    public async static Task<IServiceCollection> AddCommands(this IServiceCollection services, string[] args,WebApplication w)
-    {        
+    public async static Task<IServiceCollection> AddCommands(this IServiceCollection services, string[] args, WebApplication w)
+    {
         if (isValidCommand(args))
         {
             CommandRunner? cr = new CommandRunner(services.BuildServiceProvider());
@@ -16,7 +16,7 @@ public static class Commands
 
         return services;
     }
-    
+
     private static bool isValidCommand(string[] args)
     {
         return args.Length > 0 && Array.IndexOf(args, "custom-command") != -1;

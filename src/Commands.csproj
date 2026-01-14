@@ -1,26 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>ABB.Commands</PackageId>
-    <Version>1.0.0</Version>
+    <PackageId>Paula.Commands</PackageId>
+    <Version>1.0.1</Version>
     <Authors>Paula GORGE</Authors>
-    <Company>ABB</Company>
+    <Company>Paula</Company>
     <Description>This package is basically gives the user the ability to create commands.</Description>
     <PackageTags>ConsoleCommands;ForASPNET7;ForASPNET8</PackageTags>
   </PropertyGroup>
+ <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Identity.Web" Version="2.16.0" />
-		<PackageReference Include="Microsoft.Identity.Web.UI" Version="2.16.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.20.0" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="2.20.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="9.0.0" />
+
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.0" />
   </ItemGroup>
 
 </Project>
