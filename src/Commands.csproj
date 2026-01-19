@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
     <PackageId>Paula.Commands</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.3</Version>
     <Authors>Paula GORGE</Authors>
     <Company>Paula</Company>
     <Description>This package gives the user the ability to create commands.</Description>
