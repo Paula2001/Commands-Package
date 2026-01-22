@@ -4,7 +4,9 @@
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
+    <PackageProjectUrl>https://github.com/Paula2001/Commands-Package</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Paula2001/Commands-Package</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageId>Paula.Commands</PackageId>
     <Version>1.0.3</Version>
     <Authors>Paula GORGE</Authors>
